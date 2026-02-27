@@ -108,7 +108,7 @@ karolinejangola/
 
 - **Favicon:** Create from "KJ" initials in brand color (currently 404)
 - **OG image:** Create 1200x630 social sharing image
-- **Instagram link:** Footer has placeholder `https://instagram.com/` — needs real profile URL
+- **Instagram link:** https://www.instagram.com/psicanalista_karolinejangola (done)
 - **Welcome video:** Client may add an introductory video later
 - **Blog/content marketing:** Future consideration
 - **Google Business Profile:** Not yet set up
