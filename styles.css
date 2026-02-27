@@ -254,30 +254,23 @@ h1, h2, h3 {
 /* ── About ── */
 
 .about-content {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
-    display: flex;
-    gap: 48px;
-    align-items: flex-start;
-}
-
-.about-photo {
-    flex-shrink: 0;
+    overflow: hidden;
 }
 
 .about-img {
-    width: 300px;
+    float: left;
+    width: 280px;
     height: auto;
     border-radius: 12px;
     object-fit: cover;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 32px 16px 0;
+    shape-outside: margin-box;
 }
 
-.about-text {
-    flex: 1;
-}
-
-.about-text p {
+.about-content p {
     margin-bottom: 16px;
     font-size: 1.05rem;
     color: #444;
@@ -288,6 +281,7 @@ h1, h2, h3 {
     gap: 20px;
     margin-top: 24px;
     flex-wrap: wrap;
+    clear: both;
 }
 
 .credential-badge {
@@ -529,13 +523,15 @@ h1, h2, h3 {
         gap: 20px;
     }
 
-    .about-content {
-        flex-direction: column;
-        align-items: center;
+    .about-img {
+        float: none;
+        display: block;
+        margin: 0 auto 24px;
+        width: 240px;
     }
 
-    .about-img {
-        width: 260px;
+    .about-content {
+        text-align: center;
     }
 
     .about-credentials {
