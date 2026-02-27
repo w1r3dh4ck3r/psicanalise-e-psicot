@@ -463,6 +463,7 @@ h1, h2, h3 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+    margin-top: 32px;
 }
 
 .treatment-card {

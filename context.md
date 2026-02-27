@@ -106,7 +106,7 @@ karolinejangola/
 
 ## Outstanding / Future Work
 
-- **Favicon:** Create from "KJ" initials in brand color (currently 404)
+- **Favicon:** KJ initials in brand color — favicon.svg, favicon.ico, apple-touch-icon.png (done)
 - **OG image:** Create 1200x630 social sharing image
 - **Instagram link:** https://www.instagram.com/psicanalista_karolinejangola (done)
 - **Welcome video:** Client may add an introductory video later
