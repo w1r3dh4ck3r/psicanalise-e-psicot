@@ -4,8 +4,11 @@
     --color-brand: #5a4a3a;
     --color-brand-light: #f8f6f3;
     --color-text: #3a3a3a;
+    --color-text-secondary: #555;
     --color-text-light: #666;
     --color-text-muted: #888;
+    --color-heading-dark: #2c2c2c;
+    --color-border-light: #eee;
     --color-whatsapp: #25D366;
     --color-whatsapp-hover: #20bd5a;
     --color-whatsapp-link: #1a9e4a;
@@ -51,6 +54,25 @@ img {
     padding: 0 24px;
 }
 
+/* ── Skip Link (Accessibility) ── */
+
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 16px;
+    z-index: 2000;
+    padding: 12px 24px;
+    background: var(--color-brand);
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
 /* ── Focus Styles (Accessibility) ── */
 
 :focus-visible {
@@ -80,7 +102,7 @@ h1, h2, h3 {
     font-size: 1.8rem;
     text-align: center;
     margin-bottom: 16px;
-    color: var(--color-footer-bg);
+    color: var(--color-heading-dark);
 }
 
 .section-intro {
@@ -143,10 +165,10 @@ h1, h2, h3 {
     padding: 12px 0;
     font-size: 1.05rem;
     font-weight: 500;
-    color: #555;
+    color: var(--color-text-secondary);
     transition: color 0.2s;
     position: relative;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--color-border-light);
 }
 
 .nav-link:last-child {
@@ -318,17 +340,17 @@ h1, h2, h3 {
     margin-bottom: 12px;
     font-size: 0.95rem;
     line-height: 1.7;
-    color: #555;
+    color: var(--color-text-secondary);
 }
 
 .transform-content p:last-child {
     margin-bottom: 0;
 }
 
-.transform-lead {
-    font-size: 1.05rem !important;
+.transform-content .transform-lead {
+    font-size: 1.05rem;
     font-weight: 600;
-    color: var(--color-text) !important;
+    color: var(--color-text);
 }
 
 .transform-grid {
@@ -367,7 +389,7 @@ h1, h2, h3 {
 .transform-card p {
     font-size: 0.95rem;
     line-height: 1.7;
-    color: #555;
+    color: var(--color-text-secondary);
     margin-bottom: 0;
 }
 
@@ -394,7 +416,7 @@ h1, h2, h3 {
 .transform-closer p {
     font-size: 1.05rem;
     line-height: 1.8;
-    color: #555;
+    color: var(--color-text-secondary);
 }
 
 .section-treatments {
@@ -435,7 +457,7 @@ h1, h2, h3 {
 .about-content p {
     margin-bottom: 16px;
     font-size: 1.05rem;
-    color: #444;
+    color: var(--color-text-secondary);
 }
 
 .about-credentials {
@@ -494,7 +516,7 @@ h1, h2, h3 {
 
 .treatment-card p {
     font-size: 0.95rem;
-    color: #555;
+    color: var(--color-text-secondary);
     margin-bottom: 10px;
 }
 
@@ -534,7 +556,7 @@ h1, h2, h3 {
     font-family: 'Playfair Display', Georgia, serif;
     font-style: italic;
     font-size: 1.05rem;
-    color: #444;
+    color: var(--color-text-secondary);
     margin-bottom: 20px;
     line-height: 1.6;
 }
@@ -625,7 +647,7 @@ h1, h2, h3 {
 .contact-info h3 {
     font-size: 1.6rem;
     margin-bottom: 4px;
-    color: var(--color-footer-bg);
+    color: var(--color-heading-dark);
 }
 
 .contact-role {
@@ -654,7 +676,7 @@ h1, h2, h3 {
 
 .contact-locations {
     margin-bottom: 32px;
-    color: #555;
+    color: var(--color-text-secondary);
 }
 
 .contact-locations p {
