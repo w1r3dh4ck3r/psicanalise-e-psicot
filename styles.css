@@ -308,9 +308,25 @@ h1, h2, h3 {
     background: #1ca04e;
 }
 
-.hero .btn {
+.btn-hero {
     padding: 10px 24px;
     font-size: 0.9rem;
+    background: var(--color-brand);
+    color: #fff;
+}
+
+.btn-hero .whatsapp-icon {
+    color: var(--color-whatsapp);
+}
+
+@media (hover: hover) {
+    .btn-hero:hover {
+        background: var(--color-heading-dark);
+    }
+}
+
+.btn-hero:active {
+    background: var(--color-heading-dark);
 }
 
 /* ── Sections ── */
@@ -644,7 +660,7 @@ h1, h2, h3 {
         font-size: 1.05rem;
     }
 
-    .hero .btn {
+    .btn-hero {
         padding: 14px 32px;
         font-size: 1.05rem;
     }
