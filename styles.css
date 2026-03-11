@@ -230,7 +230,8 @@ h1, h2, h3 {
 }
 
 .hero-content {
-    text-align: center;
+    text-align: right;
+    padding-left: 40%;
 }
 
 .hero h1 {
@@ -650,6 +651,7 @@ h1, h2, h3 {
 
     .hero-content {
         max-width: 420px;
+        padding-left: 0;
     }
 
     .hero h1 {
