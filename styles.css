@@ -219,12 +219,13 @@ h1, h2, h3 {
 }
 
 .hero-banner {
-    background: var(--color-brand-light) url('images/hero-bg.jpg') left center / contain no-repeat;
-    min-height: 40vh;
+    background: var(--color-brand-light) url('images/hero-bg.jpg') center / contain no-repeat;
+    aspect-ratio: 1376 / 768;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 48px 24px;
+    justify-content: flex-end;
+    padding: 24px;
 }
 
 .hero-content {
@@ -622,8 +623,6 @@ h1, h2, h3 {
 
 @media (min-width: 769px) {
     .hero-banner {
-        min-height: 40vh;
-        justify-content: flex-end;
         padding: 48px 80px;
     }
 
@@ -718,10 +717,6 @@ h1, h2, h3 {
 /* ── Desktop (min-width: 1025px) ── */
 
 @media (min-width: 1025px) {
-    .hero-banner {
-        min-height: 45vh;
-    }
-
     .hero h1 {
         font-size: 3.8rem;
     }
