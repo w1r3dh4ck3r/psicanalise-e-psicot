@@ -227,21 +227,21 @@ h1, h2, h3 {
     content: '';
     flex: 1;
     height: 1px;
-    max-width: 200px;
+    max-width: 260px;
 }
 
 .section-divider::before {
-    background: linear-gradient(to right, transparent, var(--divider-color, rgba(90, 74, 58, 0.2)));
+    background: linear-gradient(to right, transparent, var(--divider-color, rgba(90, 74, 58, 0.35)));
 }
 
 .section-divider::after {
-    background: linear-gradient(to left, transparent, var(--divider-color, rgba(90, 74, 58, 0.2)));
+    background: linear-gradient(to left, transparent, var(--divider-color, rgba(90, 74, 58, 0.35)));
 }
 
 .section-divider svg {
     flex-shrink: 0;
     margin: 0 16px;
-    opacity: 0.35;
+    opacity: 0.55;
 }
 
 /* Variant backgrounds — match surrounding sections */
