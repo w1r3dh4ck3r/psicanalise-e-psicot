@@ -371,5 +371,21 @@
     </a>
 
     <script src="script.js"></script>
+    <script>
+    (function(){
+        if(sessionStorage.getItem('_v'))return;
+        sessionStorage.setItem('_v','1');
+        fetch('https://n8n.w1r3d.dev/webhook/visitor',{
+            method:'POST',
+            headers:{'Content-Type':'application/json'},
+            body:JSON.stringify({
+                site:location.hostname,
+                page:location.pathname,
+                referrer:document.referrer||'direct',
+                ua:navigator.userAgent
+            })
+        }).catch(function(){});
+    })();
+    </script>
 </body>
 </html>
